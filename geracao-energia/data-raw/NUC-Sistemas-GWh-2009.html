@@ -1,0 +1,691 @@
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"> <head> 
+<title>ONS - Hist&oacute;rico da Opera&ccedil;&atilde;o - Gera&ccedil;&atilde;o de Energia</title>
+    <meta name="language" content="pt-br" />
+    
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma"        content="No-Cache">
+    <meta http-equiv="Expires"       content="0">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="../include/css/layout.css" />
+    <script type="text/javascript" language="javascript">
+    function limpa()
+    {
+    //window.location="geracao_energia.aspx";
+    //var url = window.location;
+    
+    }
+    //<![CDATA[
+      
+      function _obj(nome,tipo){
+        if(document.getElementById&&document.getElementsByTagName){
+          if(tipo=="id"||tipo==null||tipo==""){
+            this.objeto=document.getElementById(nome);
+            this.estilo=document.getElementById(nome).style;
+          }else if(tipo=="tag"){
+            this.objeto=document.getElementsByTagName(nome);
+            this.escopo=document.getElementsByTagName(nome).length;
+          }
+        }else if(document.all){
+          this.objeto=document.all[nome];
+          this.estilo=document.all[nome].style;
+        }else if(document.layers){
+          this.objeto=NS4(document,nome);
+          this.estilo=this.objeto;
+        }
+      }
+      function NS4(path,obj){
+        var elementos=path.layers; var elementoExato;
+        for(var i=0;i<=elementos.length();i++){
+          if(elementos[i].id==obj) elementoExato=elementos[i];
+          else if(elementos[i].layers.length){
+		  	var temp=NS4(elementos[i],obj);
+		  }
+          if(temp) elementoExato=temp;
+        }
+        return elementoExato;
+      }
+
+      function loader(funcao){
+        var oldonload=window.onload;
+        if(typeof window.onload!='function'){
+          window.onload=funcao;
+        }else{
+          window.onload=function(){
+            oldonload();
+            funcao();
+          };
+        }
+      }
+
+      //uso : pop('pasta/arquivo.htm','420','380','janelaPopUp');
+      //obs : o parametro NOME nao deve iniciar com algarismos numericos, nem conter pontos (.), espacos e hifens (-).
+      //obs : parametrosGerais nao e obrigatorio e deve ser preenchido com os paramentros default de window.open
+      //      pop('pasta/arquivo.htm','420','380','janelaPopUp','scrollbars,resizable');
+      function pop(uri,largura,altura,nome,parametrosGerais){
+        var janela;
+        if(parametrosGerais==null||parametrosGerais==""){
+          janela=window.open(uri,nome,'width='+largura+',height='+altura);
+          janela.focus();
+        }else{
+          janela=window.open(uri,nome,'width='+largura+',height='+altura+','+parametrosGerais);
+          janela.focus();
+        }
+      }
+
+    //]]>
+    </script>
+    <script type="text/javascript" src="../include/js/linhas_alternadas.js" charset="iso-8859-1"></script>
+  </head>
+  <body>
+            
+    <div id="pg-header"></div>
+<div id="pg"> 
+  
+<div id="header" class="vHome_header">
+    <!--<div id="idiomas">
+          <a href="[url]"><img src="/images/_layout/v_english.png" width="34" height="11" alt="English" /></a>
+          <a href="[url]"><img src="/images/_layout/v_espanol.png" width="36" height="11" alt="Espa&ntilde;ol" /></a>
+        </div>-->
+    
+    <script src="/home/Scripts/swfobject_modified.js" type="text/javascript"></script>
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1000" height="147"
+        id="FlashID" title="ONS">
+        <param name="movie" value="/swf/todos.swf" />
+        <param name="quality" value="high" />
+        <param name="wmode" value="opaque" />
+        <param name="base" value="/swf/" />
+        <param name="swfversion" value="6.0.65.0" />
+        <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don&#65533;t want users to 
+see the prompt. -->
+        <param name="expressinstall" value="/home/Scripts/expressInstall.swf" />
+        <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+        <!--[if !IE]>-->
+        <object type="application/x-shockwave-flash" data="/swf/todos.swf"
+            width="1000" height="147">
+            <!--<![endif]-->
+            <param name="quality" value="high" />
+            <param name="wmode" value="opaque" />
+            <param name="base" value="/swf/" />
+            <param name="swfversion" value="6.0.65.0" />
+            <param name="expressinstall" value="/home/Scripts/expressInstall.swf" />
+            <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+            <div>
+                <h4>
+                    O Conte&#65533;do dessa p&#65533;gina requer a nova vers&#65533;o do of Adobe Flash Player.</h4>
+                <p>
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <!--img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+                            alt="Get Adobe 
+Flash player" width="112" height="33" /--></a></p>
+            </div>
+            <!--[if !IE]>-->
+        </object>
+        <!--<![endif]-->
+    </object>
+    
+    <div id="navegacao_suplementar" class="vHome_navegacao_suplementar">
+        <a href="/sala_imprensa/index.aspx">
+            <img src="/images/_layout/header_sala_imprensa.png" width="87" height="17" alt="Sala de Imprensa" /></a>
+        <a href="/educativo/index.aspx">
+            <img src="/images/_layout/header_educativo.png" width="47" height="17" alt="Educativo" /></a>
+        <a href="/biblioteca_virtual/index.aspx">
+            <img src="/images/_layout/header_biblioteca_virtual.png" width="84" height="17" alt="Biblioteca Virtual" /></a>
+        <a href="/fale/fale_conosco_in.aspx">
+            <img src="/images/_layout/header_faleconosco.png" width="67" height="17" alt="Fale Conosco" /></a>
+    </div>
+    
+</div>
+
+  <div id="container"> 
+    <div id="box-externa"> 
+      <div id="box-interna"> 
+        <dl id="menu">
+          <link rel="stylesheet" type="text/css" href="../../include/css/home.css" />
+<script type="text/javascript" src="../../include/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../../include/js/layout.js"></script>
+
+
+
+
+
+<div style="margin-left: 223px; margin-bottom: 8px;">
+      	<div id="busca" class="vHome_busca"> 
+          <form id="f_busca" method="post" action="../busca/add_busca_avancada_out.aspx">
+            <p> 
+              <input id="c_busca" name="keyword" maxlength="128" value="Pesquisa:" onfocus="this.value='';" />
+              <input type="submit" value="Ok" class="botao-ok-verde" >
+              <input type="hidden" name="pg" value="1" >
+              <input type="hidden" name="doctypes" >
+            </P>
+          </FORM>
+          <script type="text/javascript">
+                //<![CDATA[
+              var f = document.getElementById("f_busca");
+              f.onsubmit = function () {
+                  if (f.keyword.value == "") {
+                      alert("Por favor, indique o objetivo de sua busca.");
+                      f.keyword.focus();
+                      return false;
+                  }
+              };
+                //]]>
+                </SCRIPT>
+        </DIV>
+        <div id="acesso-rapido"> 
+          <form method="post" action="#">
+            <p> 
+              <select id="c_opcoes" name="opcoes">
+                <option value="-1" selected>Selecione por assunto</OPTION>
+                <option value="../historico/percentual_volume_util.aspx">Nível dos Reservatórios</OPTION>
+                <option value="[780,580,boletimDiarioOperacao]../resultados_operacao/boletim_diario/index.htm">Informações da Operação</OPTION>
+                <option value="../historico/index.aspx">Dados Históricos da Operação</OPTION>
+                <option value="../operacao/hidrologia.aspx">Estudos de Hidrologia</OPTION>
+                <option value="../operacao/meteorologia.aspx">Informações Meteorológicas</OPTION>
+                <option value="../conheca_sistema/mapas_sin.aspx">Mapas Sistema Transmissão</OPTION>
+                <option value="[616,520,mapas,scrollbars]../conheca_sistema/pop_diagrama_esquemat_usinas.aspx">Hidrelétricas 
+                Despachadas</OPTION>
+                <!--option value="../institucional/legislacao.aspx">Legislação / 
+                Regulamentação</OPTION-->
+                <option value="[605,440,visaogeral]../visao/index.aspx?area=1">Área 
+                de Atuação do ONS</OPTION>
+                <option value="../concorrencias/abertura.aspx">Concorrências</OPTION>
+              </SELECT>
+            </P>
+          </FORM>
+          <script type="text/javascript">
+                //<![CDATA[
+              var combo = document.getElementById("c_opcoes");
+              combo.onchange = function () {
+                  var _value = getSelectedValue(this);
+                  if (_value.indexOf("[") == -1 && _value.indexOf("]") == -1) {
+                      document.location = _value;
+                  } else {
+                      var _path = _value.substring(_value.indexOf("]") + 1);
+                      var parametros = _value.substring(_value.indexOf("[") + 1, _value.indexOf("]")).split(",");
+                      if (parametros.length < 3) {
+                          pop(_path, parametros[0], parametros[1], parametros[2]);
+                      } else {
+                          var outros_parametros = "";
+                          for (var i = 3; i <= parametros.length; i++) {
+                              outros_parametros = outros_parametros + "," + parametros[i]
+                          }
+                          pop(_path, parametros[0], parametros[1], parametros[2], outros_parametros);
+                      }
+                  }
+              };
+              function getSelectedValue(combo) {
+                  if (combo.options.length > 0) return combo.options[combo.selectedIndex].value;
+              }
+                //]]>
+                </SCRIPT>
+        </DIV>
+    </div>
+
+
+
+
+
+
+
+
+
+              <dt id="m_1"><img src="/images/_layout/menu/m_01_institucional.png" width="178" height="16" alt="Institucional" /></dt>
+
+              <dd>
+
+                <a href="/institucional/modelo_setorial.aspx">O Setor El&eacute;trico</a>
+
+                
+
+                <!--a href="/institucional/orientacoes_estrategicas.aspx">Orienta&ccedil;&otilde;es Estrat&eacute;gicas</a-->
+				<a href="/institucional/o_que_e_o_ons.aspx">O ONS</a>
+
+                
+
+                <a href="/sustentabilidade/index.aspx">Sustentabilidade</a>
+
+                <a href="/institucional/trabalhe_ons.aspx">Trabalhe no ONS</a>
+
+              </dd>
+
+              <!--dt id="m_2"><img src="/images/_layout/menu/m_02_entenda.png" width="178" height="16" alt="Entenda o Setor" /></dt>
+
+              <dd>
+
+                <a href="/entenda_setor/glossario.aspx">Gloss&aacute;rio</a>
+
+              </dd-->
+
+              <dt id="m_3"><img src="/images/_layout/menu/m_03_conheca.png" width="178" height="16" alt="Conhe&ccedil;a o Sistema" /></dt>
+
+              <dd>
+
+                <a href="/conheca_sistema/o_que_e_sin.aspx">O que &eacute; o SIN - Sistema Interligado Nacional</a>
+
+                <a href="/conheca_sistema/mapas_sin.aspx">Mapas do SIN</a>
+
+                <a href="/conheca_sistema/resumo_operacao.aspx">Operação do SIN em 2014</a>
+
+                <a href="/conheca_sistema/dados_tecnicos.aspx">Dados T&eacute;cnicos - SINDAT</a>
+
+              </dd>
+			  
+			  <dt id="m_13"><img src="/images/_layout/menu/m_13_atuacao.png" width="178" height="16" alt="Atua&ccedil;&atilde;o do ONS sobre o SIN" /></dt>
+
+              <dd></dd>
+			  
+             <dt id="m_4"><img src="/images/_layout/menu/m_04_procedimentos.png" width="178" height="16" alt="Procedimentos de Rede" /></dt>
+
+              <dd></dd>
+
+              <dt id="m_7"><img src="/images/_layout/menu/m_07_ampliacao.png" width="178" height="29" alt="Amplia&ccedil;&otilde;es e Refor&ccedil;os na Rede B&aacute;sica" /></dt>
+
+              <dd>
+
+                <a href="/plano_ampliacao/plano_ampliacao.aspx">PAR - Plano de Amplia&ccedil;&otilde;es e Refor&ccedil;os</a>
+
+              </dd>
+			  
+			  <dt id="m_9"><img src="/images/_layout/menu/m_09_avaliacao.png" width="178" height="29" alt="Avalia&ccedil;&atilde;o das Condi&ccedil;&otilde;es Futuras da Opera&ccedil;&atilde;o" /></dt>
+
+              <dd>
+
+                <a href="/avaliacao_condicao/planejamento_energetico.aspx">Planejamento da Opera&ccedil;&atilde;o Energ&eacute;tica</a>
+
+                <a href="/avaliacao_condicao/planejamento_eletrica_medio_prazo.aspx">Planejamento da Opera&ccedil;&atilde;o El&eacute;trica - Anual</a>
+
+                <!--a href="/avaliacao_condicao/curva_aversao.aspx">Curva de Avers&atilde;o ao Risco</a-->
+
+                <!--<a href="/avaliacao_condicao/horario_verao.aspx">Hor&aacute;rio de Ver&atilde;o</a>-->
+
+              </dd>
+			  
+			  <dt id="m_10"><img src="/images/_layout/menu/m_10_operacao.png" width="178" height="29" alt="Avalia&ccedil;&atilde;o de Curto Prazo da Opera&ccedil;&atilde;o" /></dt>
+
+              <dd>
+
+                
+
+                <a href="/operacao/estudos_de_suporte_operacao.aspx">Estudos de Seguran&ccedil;a Operacional</a>
+
+                
+
+                <a href="/operacao/diretrizes_operacao.aspx">Diretrizes para a Opera&ccedil;&atilde;o Eletroenerg&eacute;tica</a>
+
+                
+              </dd>
+
+
+              <dt id="m_14"><img src="/images/_layout/menu/m_14_resultados.png" width="178" height="16" alt="Resultados da Opera&ccedil;&atilde;o" /></dt>
+
+              <dd>
+              
+              
+                               
+              
+                  <a href="/resultados_operacao/acompanhamento_mensal_intercambios_internacionais/index.aspx">Acompanhamento Mensal dos Interc&acirc;mbios Internacionais</a>
+
+                  <a href="javascript:pop('/resultados_operacao/boletim_diario/index.htm','780','580','boletimDiarioOperacao');">Boletim Di&aacute;rio da Opera&ccedil;&atilde;o</a>
+
+                  <a href="javascript:pop('/resultados_operacao/boletim_semanal/index.htm','780','580','boletimSemanalOperacao');">Boletim Semanal da Opera&ccedil;&atilde;o</a>
+                  
+                  <a href="/resultados_operacao/boletim_mensal_geracao_eolica/index.aspx">Boletim Mensal de Geração Eólica</a>
+                  
+                  <a href="/resultados_operacao/boletim_mensal_geracao_estado/index.aspx">Boletim Mensal de Geração por Estado</a>
+                  
+                  <a href="/resultados_operacao/sintese_gerencial/comunicacao_de_ocorrencia.aspx">Comunica&ccedil;&atilde;o de Ocorr&ecirc;ncia em Instala&ccedil;&otilde;es de Gera&ccedil;&atilde;o</a>
+
+                  <a href="/resultados_operacao/sintese_gerencial/geracao_termeletrica.aspx">Geração termelétrica fora da ordem de mérito de custo</a>
+
+                  <a href="/resultados_operacao/ipdo.aspx">IPDO - Informativo Preliminar Di&aacute;rio da Opera&ccedil;&atilde;o</a>
+
+                  <a href="/resultados_operacao/ophen.aspx">OPHEN - Acompanhamento Di&aacute;rio da Opera&ccedil;&atilde;o Hidroenerg&eacute;tica</a> 
+                                  
+                  <a href="/resultados_operacao/sintese_gerencial/taxas_equivalentes.aspx" title="">Taxas equivalentes de indisponibilidades - TEIP e TEIFa</a> 
+                               </dd>
+<!--aqui espaço do link (comunicacao de ocorrencia) em resultados da operacao-->
+
+
+              <dt id="m_16"><img src="/images/_layout/menu/m_16_analise.png" width="178" height="29" alt="Análise da Carga de Energia e Demanda" /></dt>
+
+              <dd>
+
+                  <a href="/analise_carga_demanda/index.aspx">Boletim de Carga</a>
+                  <a href="/analise_carga_demanda/carga_par.aspx">Carga PAR</a>  
+                  <a href="/analise_carga_demanda/carga_pen.aspx">Carga PEN</a> 
+                  <a href="/analise_carga_demanda/carga_pel.aspx">Carga PEL</a>
+                  <a href="/analise_carga_demanda/cepac.aspx">CEPAC - Comissão de Estudos de Previsão e Acompanhamento da Carga</a>
+                  <a href="#" onclick="javascript:window.open('../sala_imprensa/energia/carga_propria.aspx', 'cargapropria', 'toolbar=no,location=no,directories=no,menubar=no,scrollbars=yes,status=no,resizable=no,WIDTH=800,HEIGHT=600, top=0,left=0');">Evolução Mensal da Carga</a>
+                  <a href="/analise_carga_demanda/horario_verao.aspx">Hor&aacute;rio de Ver&atilde;o</a>
+                  
+                
+                  
+              </dd>
+			  
+			  <dt id="m_15"><img src="/images/_layout/menu/m_15_indicadores.png" width="178" height="29" alt="Indicadores de Desempenho do SIN" /></dt>
+
+              <dd>
+
+                <a href="/indicadores_desempenho/qualidade_operacao.aspx">Indicadores de Confiabilidade da Rede Básica</a>
+				
+                <a href="/qualidade/indicadores_continuidade_rede_in.aspx">Indicadores de Continuidade dos Pontos de Controle da Rede Básica</a>
+
+              </dd>
+			  
+			  <dt id="m_11"><img src="/images/_layout/menu/m_11_historico.png" width="178" height="16" alt="Hist&oacute;rico da Opera&ccedil;&atilde;o" /></dt>
+
+              <dd class="showMenu" id="ultimo">
+
+                <a href="/historico/geracao_energia.aspx">Gera&ccedil;&atilde;o de Energia</a>
+
+                <a href="/historico/carga_propria_de_energia.aspx">Carga de Energia</a>
+
+                <a href="/historico/carga_propria_de_demanda.aspx">Carga de Demanda</a>
+
+                <a href="/historico/intercambio_entre_regioes.aspx">Interc&acirc;mbio entre as Regi&otilde;es</a>
+
+                <a href="/historico/energia_natural_afluente.aspx">Energia Natural Afluente</a>
+
+                <a href="/historico/percentual_volume_util.aspx">Volume &Uacute;til dos Principais Reservat&oacute;rios</a>
+
+                <a href="/historico/energia_armazenada.aspx">Energia Armazenada</a>
+
+              </dd>
+
+              <dt id="m_5"><img src="/images/_layout/menu/m_05_integracao.png" width="178" height="29" alt="Integra&ccedil;&atilde;o de Instala&ccedil;&otilde;es ao SIN" /></dt>
+
+              <dd>
+
+                
+
+                <a href="/integracao_sin/acesso_conexao_rede.aspx">Acesso e Conex&atilde;o &agrave; Rede B&aacute;sica</a>
+
+                
+                
+                <a href="/integracao_sin/integracao_novas_instalacoes.aspx">Integra&ccedil;&atilde;o de Novas Instala&ccedil;&otilde;es</a>
+                <a href="/integracao_sin/definicao_modalidade_de_operacao_de_usinas.aspx">Defini&ccedil;&atilde;o da Modalidade de Opera&ccedil;&atilde;o de Usinas</a>
+
+                <!--<a href="javascript:pop('<'%'='path%>/integracao_sin/hotsite/integracao/index2.html','750','550','manualAgentes');">Manual dos Agentes</a>-->
+
+              </dd>
+
+              <dt id="m_6"><img src="/images/_layout/menu/m_06_administracao.png" width="178" height="29" alt="Administra&ccedil;&atilde;o da Transmiss&atilde;o" /></dt>
+
+              <dd>
+
+                
+
+                <a href="/administracao_transmissao/contratos.aspx">Contratos</a>
+
+                
+
+                <a href="/administracao_transmissao/apuracao_servicos.aspx">Apura&ccedil;&atilde;o dos Servi&ccedil;os e Encargos da Transmiss&atilde;o</a>
+                <a href="/administracao_transmissao/engenharia_transmissao.aspx">Engenharia da Transmissão</a>
+                <a href="/integracao_sin/acesso_conexao/index.html">Guia de Acesso ao Sistema de Transmissão</a>
+                <a href="/administracao_transmissao/implantacao_medicao.aspx">Implanta&ccedil;&atilde;o da Medi&ccedil;&atilde;o para Faturamento</a>
+                <a href="/administracao_transmissao/servicos_ancilares.aspx">Servi&ccedil;os Ancilares</a>
+                <a href="/administracao_transmissao/simulacao_tarifas.aspx">Simula&ccedil;&atilde;o de Tarifas</a>
+
+              </dd>
+
+            
+
+              
+        </dl>
+        <script type="text/javascript">
+            //<![CDATA[
+                            // obs.: e preciso trocar o caminho tambem no arquivo config.aspx ## /ONS/site_2005/site ##
+              var pathjs="";
+			  if(new _obj("menu","id")){
+                
+				var menu=new _obj("menu","id");
+                var DT=menu.objeto.getElementsByTagName("dt");
+                for(var x=0;x<menu.objeto.childNodes.length;x++){
+                  var childMenu=menu.objeto.childNodes[x];
+                  var childID;
+                  if(childMenu.nodeName=="DT"){ childID = childMenu.id; } 
+                  if(childMenu.nodeName=="DD"){ childMenu.id=childID.replace("m","n"); }
+                }
+				
+                for(var i=0;i<DT.length;i++){
+                  DT[i].onclick=function(){
+                    var dtid = this.id;
+                    var ddid = this.id.replace("m", "n");
+                    var dd = new _obj(ddid, "id");
+                    dd = dd.objeto;
+                    (dd.style.display == "block") ? dd.style.display = "none" : dd.style.display = "block";
+                  };
+                  DT[i].onmouseover=function(){this.className="nivel1_hover";};
+                  DT[i].onmouseout=function(){this.className="nivel1_out";};
+                  document.getElementById('m_13').onclick = function(){location.href=''+pathjs+'/atuacao/index.aspx';};
+                  document.getElementById('m_4').onclick = function(){location.href=''+pathjs+'/procedimentos/index.aspx';};
+                  if(document.getElementById('m_12')) document.getElementById('m_12').onclick=function(){location.href=''+pathjs+'/agentes/agentes.aspx';};
+                }
+              }
+
+            //]]>
+            </script>
+        <div id="content"> 
+          <div id="bread-crumbs"> <a href="/home/index.aspx">In&iacute;cio</a><span> 
+            &gt; Hist&oacute;rico da Opera&ccedil;&atilde;o &gt;</span> <strong>Gera&ccedil;&atilde;o 
+            de Energia</strong></div>
+          <h1>Gera&ccedil;&atilde;o de Energia </h1>
+        </div>
+        <div id="nvg-dir"> 
+          <div id="busca" class="vHome_busca">
+
+<form id="f_busca" method="get" action="/busca/add_busca_avancada_out.aspx">
+<p>
+    
+    <input id="c_busca" name="keyword" type="text" maxlength="128" value="Pesquisa:" onfocus="this.value='';" />
+    <input type="submit" value="Ok" class="botao-ok-verde" />
+    <input type="hidden" name="pg" value="1" />
+    <input type="hidden" name="doctypes" value="" />
+</p>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var f=document.getElementById("f_busca");
+    f.onsubmit=function(){
+    if(f.keyword.value==""){
+        alert("Por favor, indique o objetivo de sua busca.");
+        f.keyword.focus();
+        return false;
+    }
+    };
+//]]>
+</script>
+</div>
+
+<div id="visao">
+    <a href="javascript:pop('/visao/index.aspx?area=11','605','440','visaogeral');">
+        <img src="/images/_layout/titulo_visao_geral_ons.png" width="190" height="26"
+            alt="Vis&atilde;o geral do ONS" id="visao-geral" /></a>
+</div>
+
+        </div>
+        <div id="content-full"> 
+          
+          <p class="alinha_centro"><img src="img_graficos\0_GWh_2009_Sistemas478_graph.gif" width="500" height="300" alt="Gr&aacute;fico de hist&oacute;rico do per&iacute;odo selecionado" />
+          <p> 
+            <!--div class="alinha_centro box_full"-->
+          <table width = "100%" border="0" cellpadding="0" cellspacing="0" >
+            <tr> 
+              <!--<td width = "2%">
+		   </td>-->
+              <td valign="top" width = "11"> 
+                
+                <table  class="tabelaHistorico">
+                  <tr> 
+                    <td bgcolor=#ccccc></td>
+                    <td bgcolor=#ccccc>2009</td>
+                  </tr>
+                  		
+                  <tr> 
+                    <td> 
+                      Jan
+                    </td>
+                    <td> 
+                      1266,73
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Fev
+                    </td>
+                    <td> 
+                      904,22
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Mar
+                    </td>
+                    <td> 
+                      997,76
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Abr
+                    </td>
+                    <td> 
+                      951,06
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Mai
+                    </td>
+                    <td> 
+                      1004,10
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Jun
+                    </td>
+                    <td> 
+                      1259,06
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Jul
+                    </td>
+                    <td> 
+                      1346,63
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Ago
+                    </td>
+                    <td> 
+                      484,64
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Set
+                    </td>
+                    <td> 
+                      1162,08
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Out
+                    </td>
+                    <td> 
+                      1069,92
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Nov
+                    </td>
+                    <td> 
+                      1178,68
+                    </td>
+                  </tr>
+                  
+                  <tr> 
+                    <td> 
+                      Dez
+                    </td>
+                    <td> 
+                      1332,23
+                    </td>
+                  </tr>
+                  
+                </table></td>
+              
+              <!--/div-->
+            </tr>
+          </table>
+          <br>
+          
+          
+          
+          &nbsp;&nbsp;&nbsp;<!--<a href="#" onclick="javascript:window.open('gera_arquivo_xls.aspx?2763&periodo=2009&periodo2=-1&titulo=Geração de Energia','','width=100,height=100')" >Fazer 
+          download da planilha</a><br> -->
+          
+          <a href="#" onclick="javascript:document.envia.submit()">Fazer download da planilha</a>
+         
+        <form name="envia" target="_blank" action="gera_arquivo_xls.aspx?2763&periodo=2009&periodo2=-1&titulo=Geração de Energia" method="post">        
+            <input type="hidden" value="<table border =1><tr><td colspan=2><b>Geração de Energia</b></td></tr><tr><td bgcolor=#ccccc></td><td bgcolor=#ccccc>2009</td></tr><tr><td>Jan</td><td>1266,73</td></tr><tr><td>Fev</td><td>904,22</td></tr><tr><td>Mar</td><td>997,76</td></tr><tr><td>Abr</td><td>951,06</td></tr><tr><td>Mai</td><td>1004,10</td></tr><tr><td>Jun</td><td>1259,06</td></tr><tr><td>Jul</td><td>1346,63</td></tr><tr><td>Ago</td><td>484,64</td></tr><tr><td>Set</td><td>1162,08</td></tr><tr><td>Out</td><td>1069,92</td></tr><tr><td>Nov</td><td>1178,68</td></tr><tr><td>Dez</td><td>1332,23</td></tr></table>" id="excel" name="excel"/>
+        </form>
+                                                       
+          <p id="voltar"><a href="geracao_energia.aspx">Nova Consulta</a></p>
+        </div>
+        <div id="box-clean"></div>
+      </div>
+    </div>
+    <div id="copyright" class="vHome_copyright">
+    
+
+    <table width="740" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="258" align="right" valign="top">
+          <p class="titEnderecos"><img src="../images/_layout/titEnderecosONS.gif" width="90" height="12" /></p>
+          <p class="descEnderecos">Confira os endereços do ONS em todo o Brasil e <a href="/fale/enderecos.aspx">entre em contato</a></p></td>
+        <td width="502" valign="top"><table border="0" cellspacing="0" cellpadding="0" class="icosBase">
+          <tr>
+            <td><img src="../images/_layout/icoEnd.gif" width="41" height="33" /></td>
+            <td width="80"><a href="/fale/fale_conosco_in.aspx">Fale Conosco</a></td>
+            <td><img src="../images/_layout/icoMap.gif" width="33" height="33" /></td>
+            <td width="90"><a href="/mapasite/index.aspx">Mapa do Site</a></td>
+            <td><img src="../images/_layout/icoLinks.gif" width="40" height="33" /></td>
+            <td><a href="/links_uteis/index.aspx">Links Úteis</a></td>
+          </tr>
+        </table>
+        
+        <p class="assina">© 2014 ONS - Todos os direitos reservados</p>
+        <p class="polpriva"><a href="/politica_privacidade/politica_privacidade.aspx">Política de Privacidade</a></p>
+        
+        </td>
+      </tr>
+    </table>
+</div>
+  </div>
+</div>
+ <div id="pg-copyright"></div>
+            
+  </body>
+</html>
