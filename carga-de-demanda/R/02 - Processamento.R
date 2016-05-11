@@ -79,8 +79,8 @@ base <- plyr::ldply(arqs_consistentes, ler_e_transformar)
 
 base_arquivos$leitura_ok <- consistencia
 
-write.csv(base_arquivos, file = "data/base_arquivos.csv")
-write.csv(base, file = "data/base.csv")
+write.csv(base_arquivos, file = "data/base_arquivos.csv", row.names = F)
+write.csv(base, file = "data/base.csv", row.names = F)
 
 
 
