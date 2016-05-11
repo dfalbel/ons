@@ -20,20 +20,6 @@ criar_nome_arq <- function(regiao, unidade_de_medida, base, periodo){
 
 library(httr)
 
-POST2 <- dplyr::failwith(NULL, function(regiao, unidade_de_medida, base, periodo){
-  par <- list(
-    submit = "Consultar",
-    passo1 = regiao,
-    passo2 = unidade_de_medida,
-    passo3 = base,
-    passo4 = periodo,
-    passo5 = "-1"
-  )
-  arq <- criar_nome_arq(regiao, unidade_de_medida, base, periodo)
-  POST(url, body = par, encode = "form", write_disk(arq))
-})
-
-
 for(regiao in regioes){
   for(unidade_de_medida in unidades_de_medida){
     for(base in bases){

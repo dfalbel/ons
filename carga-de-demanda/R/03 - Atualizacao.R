@@ -2,7 +2,7 @@
 library(magrittr)
 library(dplyr)
 library(httr)
-
+source("R/00 - Parametros.R")
 # A base da carga-demanda está na visão mensal. No entanto todos os dados ficam 
 # disponíveis em uma página por ano.
 # Para atualizar precisamos pegar baixar de novo os dados do último ano e 
@@ -19,18 +19,6 @@ periodo_atualizar <- base_arquivos %>%
 for(regiao in regioes){
   file.remove(criar_nome_arq(regiao, periodo_atualizar))  
 }
-
-# função p/ baixar
-POST2 <- dplyr::failwith(NULL, function(regiao, periodo){
-  par <- list(
-    submit = "Consultar",
-    passo1 = regiao,
-    passo2 = periodo,
-    passo3 = "-1"
-  )
-  arq <- criar_nome_arq(regiao, periodo)
-  POST(url, body = par, encode = "form", write_disk(arq))
-})
 
 # baixar os dados mais recentes de novo.
 for(regiao in regioes){

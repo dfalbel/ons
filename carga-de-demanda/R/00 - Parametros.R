@@ -9,9 +9,7 @@ criar_nome_arq <- function(regiao, periodo){
   regiao <- stringr::str_replace_all(regiao, stringr::fixed("/"), "")
   sprintf("data-raw/%s-%s.html", regiao, periodo)
 }
-
 # Funções auxiliares --------------------------
-
 verificar_consistencia <- function(arq){
   
   f_aux <- dplyr::failwith(F, function(x){
@@ -62,3 +60,14 @@ ler_e_transformar <- function(arq){
   d %>%
     dplyr::select(regiao, ano, mes, carga_de_demanda)
 }
+# POST 2 função usada p/ baixar
+POST2 <- dplyr::failwith(NULL, function(regiao, periodo){
+  par <- list(
+    submit = "Consultar",
+    passo1 = regiao,
+    passo2 = periodo,
+    passo3 = "-1"
+  )
+  arq <- criar_nome_arq(regiao, periodo)
+  POST(url, body = par, encode = "form", write_disk(arq))
+})
