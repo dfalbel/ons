@@ -3,6 +3,8 @@ ons
 
 Dados públicos diponibilizados pelo Operador Nacional do Sistema Elétrico (ONS)
 
+[Post no blog](http://dfalbel.github.io/2016/05/dados-ons.html).
+
 ## Leitura dos dados:
 
 As seguintes bases já estão disponíveis no repositório:
