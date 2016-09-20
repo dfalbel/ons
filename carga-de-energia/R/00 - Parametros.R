@@ -65,6 +65,6 @@ ler_e_transformar <- function(arq){
     periodo = periodo,
     ano = ano,
     mes = mes,
-    carga_de_energia = d[["X2"]] %>% str_replace_all(fixed(","), ".") %>% as.numeric()
+    carga_de_energia = d[["X2"]] %>% stringr::str_replace_all(fixed(","), ".") %>% as.numeric()
   )
 }
