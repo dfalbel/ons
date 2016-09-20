@@ -1,6 +1,9 @@
 ons
 ========================
 
+> As bases não estão sendo atualizadas mensalmente, se você for usar e precisar da versão
+> mais atualizada favor escrever um issue neste [link](https://github.com/dfalbel/ons/issues)
+
 Dados públicos diponibilizados pelo Operador Nacional do Sistema Elétrico (ONS)
 
 [Post no blog](http://dfalbel.github.io/2016/05/dados-ons.html).
