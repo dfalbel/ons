@@ -2,8 +2,9 @@
 library(magrittr)
 library(dplyr)
 library(httr)
+setwd("geracao-energia/")
 source("R/00 - Parametros.R")
-# A base da carga-demanda está na visão mensal. No entanto todos os dados ficam 
+# A base da geração de energia está na visão mensal. No entanto todos os dados ficam 
 # disponíveis em uma página por ano.
 # Para atualizar precisamos pegar baixar de novo os dados do último ano e 
 # adicionar estes dados à tabela.
