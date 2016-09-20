@@ -2,7 +2,9 @@
 library(magrittr)
 library(dplyr)
 library(httr)
+library(rvest)
 source("R/00 - Parametros.R")
+setwd("carga-de-demanda/")
 # A base da carga-demanda está na visão mensal. No entanto todos os dados ficam 
 # disponíveis em uma página por ano.
 # Para atualizar precisamos pegar baixar de novo os dados do último ano e 
